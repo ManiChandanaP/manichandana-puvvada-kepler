@@ -1,0 +1,70 @@
+body{
+    background-color:beige;
+}
+h1{
+    font-style: oblique;
+    font-family:Brush Script MT;
+    font-size:60px;
+    text-align: center;
+    color:brown;
+    font-weight: bold;
+}
+h2{
+    font-style:italic;
+    font-size:30px;
+    font-family:Papyrus;
+    color:violet;
+    text-decoration: underline;
+}
+p{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color:darkblue;
+    font-style: italic;
+}
+#about {
+    padding: 10px;
+    margin: 10px 50px;
+    text-align:center;
+
+}
+#experience{
+    border: darkmagenta solid 2px;
+    padding: 10px;
+    margin: auto 25px;
+    display: block;
+}
+#experience li {
+    color:chocolate;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+#connect{
+    padding: 10px;
+    margin: auto 50px;
+    font-weight:bold;
+    text-align: right;
+}
+#connect li{
+    color:darkolivegreen;
+    list-style-type: none;
+}
+img{
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 5px;
+        width:100%;
+        height:100px;
+}
+a:link, a:visited {
+  
+    color: black;
+    border: 0px solid green;
+    padding: 5px 20px;
+    text-align: center;
+    display: inline-block;
+  }
+  
+  a:hover, a:active {
+    background-color: green;
+    color: white;
+  }
