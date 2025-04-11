@@ -1,20 +1,21 @@
 body{
-    background-color:beige;
+    background-color:blanchedalmond;
+    width:100%;
 }
 h1{
     font-style: oblique;
     font-family:Brush Script MT;
     font-size:60px;
     text-align: center;
-    color:brown;
+    color:darkgoldenrod;
     font-weight: bold;
 }
 h2{
     font-style:italic;
     font-size:30px;
-    font-family:Papyrus;
-    color:violet;
-    text-decoration: underline;
+    font-family:Times New Roman;
+    color:darkgreen;
+    text-decoration: none;
 }
 p{
     font-family:Georgia, 'Times New Roman', Times, serif;
@@ -27,16 +28,24 @@ p{
     text-align:center;
 
 }
-#experience{
-    border: darkmagenta solid 2px;
-    padding: 10px;
-    margin: auto 25px;
-    display: block;
-}
-#experience li {
-    color:chocolate;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
+#experience .job {
+    margin-bottom: 30px;
+  }
+  .job-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    color: darkblue;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .job-description {
+    margin-top: 10px;
+    margin-left: 15px;
+  }
+#experience p{
+    color:darkorchid;
 }
 #connect{
     padding: 10px;
@@ -51,20 +60,49 @@ p{
 img{
         border: 1px solid #ddd;
         border-radius: 4px;
-        padding: 5px;
+        padding: 2px;
         width:100%;
         height:100px;
 }
-a:link, a:visited {
+nav {
+    position: sticky;
+    top: 0;
+    background-color: lightblue;
+    padding: 10px;
+    z-index: 1000;
+  }
   
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+  
+.nav-menu a {
+    text-decoration: none;
+    color: darkolivegreen;
+    font-weight: bold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+  
+#connect .socialmedia-links {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+}
+#connect .socialmedia-links a:link, a:visited {
     color: black;
-    border: 0px solid green;
+    font-style: italic;
     padding: 5px 20px;
     text-align: center;
     display: inline-block;
-  }
-  
-  a:hover, a:active {
-    background-color: green;
+}
+  #connect .socialmedia-links a:hover, a:active {
+    background-color: lightblue;
     color: white;
-  }
+}
