@@ -1,6 +1,7 @@
 body{
-    background-color:blanchedalmond;
+    background-color:lightgoldenrodyellow;
     width:100%;
+    overflow-x: hidden;
 }
 h1{
     font-style: oblique;
@@ -27,6 +28,9 @@ p{
     margin: 10px 50px;
     text-align:center;
 
+}
+#experience{
+    padding:30px;
 }
 #experience .job {
     margin-bottom: 30px;
@@ -57,28 +61,23 @@ p{
     color:darkolivegreen;
     list-style-type: none;
 }
-img{
-        border: 1px solid #ddd;
-        border-radius: 4px;
-        padding: 2px;
-        width:100%;
-        height:100px;
-}
+
 nav {
     position: sticky;
     top: 0;
-    background-color: lightblue;
-    padding: 10px;
+    background-color: gainsboro;
+    padding: 20px;
     z-index: 1000;
   }
   
 .nav-menu {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 32px;
+    gap: 90px;
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 2rem;
 }
   
 .nav-menu a {
@@ -106,3 +105,79 @@ nav {
     background-color: lightblue;
     color: white;
 }
+#skills {
+    padding:30px;
+}
+#projects{
+    padding:30px;
+}
+img{
+    padding: 10px;
+}
+.container{
+    display: flex;
+}
+
+/* Mobile */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 1rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    color: darkslategray;
+  }
+  
+  ul {
+    padding: 0;
+    background-color: #fff;
+  }
+  
+  h1 {
+    font-size: 1.2rem;
+    font-style: normal;
+    color: darkmagenta;
+  }
+  
+  /* Tablet Styles */
+  @media (min-width: 600px) {
+    h2 {
+      font-size: 2rem;         
+      color: darkkhaki;         
+    }
+  
+    ul {
+      padding: 1rem;          
+      background-color: #e0f7fa; 
+    }
+  
+    h1 {
+      font-size: 1.5rem;       
+      font-style: italic;  
+      color:darkorchid;   
+    }
+  }
+  
+    /* Desktop Styles */
+  @media (min-width: 1024px) {
+    h2 {
+      font-size: 2.5rem;       
+      color: darkolivegreen;          
+    }
+  
+    ul {
+      padding: 2rem;           
+      background-color: #c5cae9; 
+    }
+  
+    h1 {
+      font-size: 2rem;        
+      font-style: oblique;    
+      color: darkred; 
+    }
+  }
+  
