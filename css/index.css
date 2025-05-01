@@ -1,7 +1,6 @@
 body{
     background-color:lightgoldenrodyellow;
     width:100%;
-    overflow-x: hidden;
 }
 h1{
     font-style: oblique;
@@ -131,12 +130,10 @@ body {
     font-size: 1.5rem;
     color: darkslategray;
   }
-  
-  ul {
+  .nav-list ul {
     padding: 0;
     background-color: #fff;
   }
-  
   h1 {
     font-size: 1.2rem;
     font-style: normal;
@@ -149,12 +146,10 @@ body {
       font-size: 2rem;         
       color: darkkhaki;         
     }
-  
-    ul {
-      padding: 1rem;          
-      background-color: #e0f7fa; 
+    .nav-list ul {
+      padding: 2rem;           
+      background-color: #c5cae9; 
     }
-  
     h1 {
       font-size: 1.5rem;       
       font-style: italic;  
@@ -168,16 +163,37 @@ body {
       font-size: 2.5rem;       
       color: darkolivegreen;          
     }
-  
-    ul {
-      padding: 2rem;           
-      background-color: #c5cae9; 
+    .nav-list ul {
+      padding: 1rem;          
+      background-color: #e0f7fa; 
     }
-  
     h1 {
       font-size: 2rem;        
       font-style: oblique;    
       color: darkred; 
     }
   }
+  #skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style-type: none;
+    padding: 0;
+  }
   
+  #skills li {
+    background-color:linen;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  @media (max-width: 600px) {
+    #skills ul {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    #skills li{
+      background-color: #c5cae9;
+      color:blueviolet;
+    }
+  }
