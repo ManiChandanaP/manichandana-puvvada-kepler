@@ -196,6 +196,9 @@ body {
       background-color: #c5cae9;
       color:blueviolet;
     }
+    #projects ul {
+    flex-direction: column;
+  }
   }
   #leave-message{
     padding:30px;
@@ -227,3 +230,17 @@ body {
     background-color: red;
   }
   
+#projects ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+#projects li {
+  background-color: darkgray;
+  padding: 10px 15px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px gainsboro;
+}

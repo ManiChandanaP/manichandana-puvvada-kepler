@@ -43,3 +43,28 @@ messageForm.addEventListener("submit", function(event) {
   messageList.appendChild(newMessage);
   messageForm.reset();
 });
+
+const githubUsername = "ManiChandanaP"; 
+const apiUrl = `https://api.github.com/users/${githubUsername}/repos`;
+
+fetch(apiUrl)
+  .then(response => {
+    return response.json(); 
+  })
+  .then(data => {
+    const repositories = data; 
+    console.log(repositories); 
+    const projects = document.getElementById("projects");
+    const projectList = projects.querySelector("ul");
+
+    for (let i = 0; i < repositories.length; i++) {
+      const project = document.createElement("li");
+      project.innerText = repositories[i].name;
+      projectList.appendChild(project);
+    }
+  })
+  .catch(error => {
+    console.error("Error fetching repositories:", error);
+    const projectSection = document.getElementById("projects");
+    projectSection.innerText = "Sorry, we couldn’t find your projects.";
+  });
